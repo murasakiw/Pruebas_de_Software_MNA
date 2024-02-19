@@ -1,15 +1,18 @@
 """
 Module for managing hotel information.
 
-This module provides a class Hotel inheriting from Customer, 
-which includes methods for managing hotel-specific operations 
-such as checking if a hotel is registered, modifying stored information, 
-making room reservations, and canceling reservations.
+This module provides a class Hotel inheriting
+from Customer, which includes methods for
+managing hotel-specific operations such as
+checking if a hotel is registered, modifying
+stored information, making room reservations,
+and canceling reservations.
 
 Classes:
     - Hotel: A class for managing hotel information, inheriting from Customer.
 """
 from customer import Customer
+
 
 class Hotel(Customer):
     """
@@ -20,7 +23,8 @@ class Hotel(Customer):
 
     Methods:
         - hotel_is_registered(hotel_name): Check if a hotel is registered.
-        - modify_info(hotel, feature, new_value): Modify stored information in a JSON file.
+        - modify_info(hotel, feature, new_value): Modify stored information
+          in a JSON file.
         - reserve_room(hotel): Reserve a room in a hotel.
         - cancel_reservation(hotel): Cancel a reservation in a hotel.
     """
@@ -37,13 +41,14 @@ class Hotel(Customer):
             - hotel (dict): A dictionary with hotel data.
 
         Returns:
-            tuple: A tuple containing a boolean indicating whether the hotel is registered
-                   and the index of the hotel in the list of registered hotels.
+            tuple: A tuple containing a boolean indicating whether the
+            hotel is registered and the index of the hotel in the list
+            of registered hotels.
         """
         data = self.read_file(self.path)
         for i, element in enumerate(data):
             if (element['hotel_name'] == hotel['hotel_name'] and
-                element['location'] == hotel['location']):
+                    element['location'] == hotel['location']):
                 return (True, i)
         return (False, -1)
 
@@ -67,10 +72,12 @@ class Hotel(Customer):
         """
         Make a reservation at a hotel.
 
-        This method makes a reservation at a hotel based on the provided hotel information.
+        This method makes a reservation at a hotel based on the provided
+        hotel information.
 
         Parameters:
-            - hotel (dict): A dictionary containing the information of the hotel.
+            - hotel (dict): A dictionary containing the information
+             of the hotel.
         """
         data = self.read_file(self.path)
         hotel_in_list, idx = self.hotel_is_registered(hotel)
@@ -83,10 +90,12 @@ class Hotel(Customer):
         """
         Cancel a reservation at a hotel.
 
-        This method cancels a reservation at a hotel based on the provided hotel information.
+        This method cancels a reservation at a hotel based on the provided
+        hotel information.
 
         Parameters:
-            - hotel (dict): A dictionary containing the information of the hotel.
+            - hotel (dict): A dictionary containing the information
+            of the hotel.
         """
         data = self.read_file(self.path)
         hotel_in_list, idx = self.hotel_is_registered(hotel)

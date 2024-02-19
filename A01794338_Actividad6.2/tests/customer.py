@@ -10,6 +10,7 @@ Classes:
 """
 import json
 
+
 class Customer:
     """
     Class for managing customer information.
@@ -17,10 +18,13 @@ class Customer:
     Methods:
         - read_file(path): Read data from a JSON file.
         - write_file(data): Write data to a JSON file.
-        - create(new_element, path): Create a new customer and save it to a JSON file.
+        - create(new_element, path): Create a new customer and save it to
+          a JSON file.
         - delete(element): Delete a customer and save changes to a JSON file.
-        - display_info(): Display customers stored information from a JSON file.
-        - modify_info(customer, feature, new_value): Modify stored information for a customer.
+        - display_info(): Display customers stored information from
+          a JSON file.
+        - modify_info(customer, feature, new_value): Modify stored information
+          for a customer.
     """
     def __init__(self):
         self.path = ''
@@ -62,7 +66,7 @@ class Customer:
             - path (str): The path to the JSON file containing the information.
 
         """
-        assert isinstance(new_element, dict), 'Invalid type: new_element has to be dict'
+        assert isinstance(new_element, dict), 'New_element has to be dict'
         self.path = path
         self.new_element = new_element
         list_info = self.read_file(self.path)
@@ -87,7 +91,7 @@ class Customer:
         Display stored information from a JSON file.
         """
         data = self.read_file(self.path)
-        for i, element in enumerate(data,start=1):
+        for i, element in enumerate(data, start=1):
             print(f'------{i}------')
             for key, value in element.items():
                 print(f'{key}: {value}')
