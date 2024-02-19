@@ -10,6 +10,7 @@ Classes:
 """
 import json
 
+
 class Reservation:
     """
     Class that manages hotel reservations.
@@ -19,7 +20,8 @@ class Reservation:
         - write_file(data, path): Write data to a JSON file.
         - hotel_is_registered(hotel_name): Check if a hotel is registered.
         - create(hotel_name, customer): Create a new reservation for a hotel.
-        - cancel(hotel_name, customer): Cancel an existing reservation for a hotel.
+        - cancel(hotel_name, customer): Cancel an existing reservation for
+          a hotel.
     """
     def __init__(self, path_reservation):
         self.path_reservation = path_reservation
@@ -59,13 +61,14 @@ class Reservation:
             - hotel (dict): A dictionary with hotel data.
 
         Returns:
-            tuple: A tuple containing a boolean indicating whether the hotel is registered
-                   and the index of the hotel in the list of registered hotels.
+            tuple: A tuple containing a boolean indicating whether
+            the hotel is registered and the index of the hotel in
+            the list of registered hotels.
         """
         data = self.read_file(self.path_reservation)
         for i, element in enumerate(data):
             if (element['hotel_name'] == hotel['hotel_name'] and
-            element['location'] == hotel['location']):
+                    element['location'] == hotel['location']):
                 return (True, i)
         return (False, -1)
 
@@ -80,7 +83,8 @@ class Reservation:
         """
         data_reservation = self.read_file(self.path_reservation)
         hotel_in_list, idx = self.hotel_is_registered(hotel)
-        if hotel_in_list and data_reservation[idx].get('reservations') is not None:
+        if (hotel_in_list and
+                data_reservation[idx].get('reservations') is not None):
             data_reservation[idx]['reservations'] += [customer]
             data_reservation[idx]['rooms'] -= 1
         else:
