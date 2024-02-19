@@ -1,0 +1,14 @@
+[
+    {
+        "hotel_name": "Sheraton",
+        "location": "New York",
+        "rooms": 85,
+        "reservations": [
+            {
+                "first_name": "Isabella",
+                "last_name": "Gomez",
+                "phone_number": "234-567-8901"
+            }
+        ]
+    }
+]

@@ -1,0 +1,53 @@
+[
+    {
+        "hotel_name": "Sheraton",
+        "location": "New York",
+        "rooms": 85,
+        "reservations": [
+            {
+                "first_name": "Isabella",
+                "last_name": "Gomez",
+                "phone_number": "234-567-8901"
+            },
+            {
+                "first_name": "Omar",
+                "last_name": "Esparza",
+                "phone_number": "55-33-98-01-18"
+            }
+        ]
+    },
+    {
+        "hotel_name": "InterContinental",
+        "location": "London",
+        "rooms": 57,
+        "reservations": [
+            {
+                "first_name": "Daniel",
+                "last_name": "Rodriguez",
+                "phone_number": "345-678-9012"
+            },
+            {
+                "first_name": "Selef",
+                "last_name": "Garcia",
+                "phone_number": "55-45-96-54-23"
+            },
+            {
+                "first_name": "Fred",
+                "last_name": "Williams",
+                "phone_number": "956-459-5423"
+            }
+        ]
+    },
+    {
+        "hotel_name": "Ritz-Carlton",
+        "location": "Madrid",
+        "rooms": 72,
+        "reservations": [
+            {
+                "first_name": "Jose",
+                "last_name": "Martinez",
+                "phone_number": "123-456-7890"
+            }
+        ]
+    }
+]

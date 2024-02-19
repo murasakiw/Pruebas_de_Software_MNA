@@ -1,0 +1,17 @@
+{
+    "hotel_name": "Sheraton",
+    "location": "New York",
+    "rooms": 85,
+    "reservations": [
+        {
+            "first_name": "Isabella",
+            "last_name": "Gomez",
+            "phone_number": "234-567-8901"
+        },
+        {
+            "first_name": "Omar",
+            "last_name": "Esparza",
+            "phone_number": "55-33-98-01-18"
+        }
+    ]
+}

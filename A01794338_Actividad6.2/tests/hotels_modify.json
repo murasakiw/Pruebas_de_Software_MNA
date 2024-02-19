@@ -1,0 +1,12 @@
+[
+    {
+        "hotel_name": "Ritz-Carlton",
+        "location": "Madrid",
+        "rooms": 72
+    },
+    {
+        "hotel_name": "Hilton",
+        "location": "Mexico City",
+        "rooms": 115
+    }
+]

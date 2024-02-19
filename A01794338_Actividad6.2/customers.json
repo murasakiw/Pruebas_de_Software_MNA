@@ -1,0 +1,32 @@
+[
+    {
+        "first_name": "Sergio",
+        "last_name": "Esparza",
+        "phone_number": "55-33-98-01-18"
+    },
+    {
+        "first_name": "Selef",
+        "last_name": "Garcia",
+        "phone_number": "55-45-96-54-23"
+    },
+    {
+        "first_name": "Sergio",
+        "last_name": "Perez",
+        "phone_number": "956-745-8509"
+    },
+    {
+        "first_name": "Daniel",
+        "last_name": "Rodriguez",
+        "phone_number": "345-678-9012"
+    },
+    {
+        "first_name": "Jose",
+        "last_name": "Martinez",
+        "phone_number": "123-456-7890"
+    },
+    {
+        "first_name": "Isabella",
+        "last_name": "Gomez",
+        "phone_number": "234-567-8901"
+    }
+]

@@ -1,0 +1,27 @@
+[
+    {
+        "hotel_name": "InterContinental",
+        "location": "Scotland",
+        "rooms": 57
+    },
+    {
+        "hotel_name": "Westin",
+        "location": "Los Angeles",
+        "rooms": 103
+    },
+    {
+        "hotel_name": "Grand Hyatt",
+        "location": "Tokyo",
+        "rooms": 0
+    },
+    {
+        "hotel_name": "Sheraton",
+        "location": "New York",
+        "rooms": 0
+    },
+    {
+        "hotel_name": "Sheraton",
+        "location": "New York",
+        "rooms": 84
+    }
+]
